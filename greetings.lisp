@@ -8,3 +8,6 @@
 (defmacro evaluator (s-exp)
   `(format t "~A evalutes to: ~S" (write-to-string (quote ,s-exp)) ,s-exp))
 
+(defun right-function ()
+  "This function is good."
+  t)

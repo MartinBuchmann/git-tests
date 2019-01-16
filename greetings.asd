@@ -6,7 +6,7 @@
   :license  "Public Domain"
   :version "0.0.1"
   :serial t
-  :depends-on (#:alexandria #:prove)
+  :depends-on (#:alexandria #:prove #:log4cl)
   :components ((:file "package")
                (:file "greetings"))
   :in-order-to ((test-op (test-op "greetings-test"))))

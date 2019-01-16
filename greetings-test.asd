@@ -4,9 +4,8 @@
   :license "Public Domain"
   :version "0.0.1"
   :serial t
-  :depends-on ("greetings" "lisp-unit")
+  :depends-on ("greetings" "prove")
   :components ((:test-file "greetings-tests"))
   :perform (test-op (op system)
-                    (funcall (read-from-string "lisp-unit:run-tests")
-                             ;(system-relative-pathname :greetings-test "tests/")
-                             )))
+                    (funcall (read-from-string "prove:run")
+                             (system-relative-pathname :greetings-test "tests/"))))

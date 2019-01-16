@@ -1,7 +1,10 @@
 (in-package :greetings)
 
-(define-test test-01
-  (assert-equal 1 (* 1 1))
-  (assert-true (right-function))
-  (assert-nil (greeting #p"greeting"))
-  (assert-equal 4 (evaluator (+ 1 3))))
+(plan 4)
+
+(is   (* 1 1) 1)
+(ok   (right-function))
+(ok   (not (greeting #p"greeting")))
+(is   (evaluator (+ 1 3)) 4)
+
+(finalize)

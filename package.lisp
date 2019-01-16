@@ -1,5 +1,5 @@
 ;;;; package.lisp
 
 (defpackage #:greetings
-  (:use #:cl #:lisp-unit)
+  (:use #:cl #:prove)
   (:import-from :alexandria :iota :factorial))

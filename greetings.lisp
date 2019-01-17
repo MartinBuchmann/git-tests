@@ -10,9 +10,12 @@
              (format t "~S~%" line))))
 
 (defmacro evaluator (s-exp)
-  `(progn
-     (format t "~A evalutes to: ~S~%" (write-to-string (quote ,s-exp)) ,s-exp)
-     ,s-exp))
+  (with-gensyms (temp)
+    (declare (ignore temp))
+    `(let ((temp (write-to-string (quote ,s-exp))))
+       (progn
+         (format t "~A evaluates to: ~S~%" temp ,s-exp)
+         ,s-exp))))
 
 (defun right-function ()
   "This function is good."

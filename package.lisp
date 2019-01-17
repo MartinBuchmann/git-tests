@@ -2,4 +2,4 @@
 
 (defpackage #:greetings
   (:use #:cl #:prove)
-  (:import-from :alexandria :iota :factorial))
+  (:import-from :alexandria :once-only :with-gensyms))

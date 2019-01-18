@@ -1,5 +1,7 @@
 (in-package #:greetings)
 
+(setf prove:*enable-colors* nil)
+
 (defun greeting (file)
   "Reads the greetings from FILE."
   (with-open-file (data file)

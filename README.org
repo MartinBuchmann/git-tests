@@ -2,7 +2,7 @@
 #+TITLE: My test repository
 #+AUTHOR: Martin Buchmann
 #+STARTUP: showall
-# Time-stamp: <2019-01-15 21:18:14 Martin>
+# Time-stamp: <2019-01-26 15:38:03 Martin>
 
 * A simple repo for testing git's/magit's features
 
@@ -10,5 +10,6 @@ This repo has no deeper meaning besides being my playground for learning more
 about [[https://git-scm.com/book/en/v2][git]] and [[https://magit.vc][magit]]. I enjoyed John's [[http://jwiegley.github.io/git-from-the-bottom-up/][introduction]] to git as a starting point.
 
 The code itself has no actual purpose but should run on a recent CL
-implementation.
+implementation. I try to patch and apply the changes when I have no access to
+[[https://www.github.com][github]].
 

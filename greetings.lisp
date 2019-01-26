@@ -23,3 +23,7 @@
 (defun right-function ()
   "This function is good."
   t)
+
+(defun wrong-function ()
+  "This function is not good."
+  nil)

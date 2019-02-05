@@ -24,6 +24,12 @@
   "This function is good."
   t)
 
+<<<<<<< Updated upstream
 (defun wrong-function ()
   "This function is not good."
   nil)
+=======
+(defun something-came-to-my-mind (a b c)
+  "Do I really need this?"
+  (* a b c))
+>>>>>>> Stashed changes
